@@ -1,0 +1,59 @@
+body{
+    height: 600px;
+    background: url(dado/fondo.jpeg) center/cover no-repeat;
+}
+#cuboDiv {
+    width: 200px;
+    height: 200px;
+    top:100px;
+    position: relative;
+    margin:auto;
+    transform-style:preserve-3d;
+    perspective: 22700px;
+    color: red;
+    transform: rotateY(-30deg) rotateX(-30deg);
+    /* Se podria activar el hover  */
+    /* transition: transform 2s linear; */
+}
+
+#cuboDiv>div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px white solid;
+    border-radius: 5% ;
+    background-color: white;
+    
+}
+
+#frente{
+    background: url('dado/tres.png') center/cover;
+    transform: translateZ(100px);
+}
+   
+#derecha{
+    background: url('dado/dos.png') center/cover;
+    transform:   translateX(100px) rotateY(90deg)    ;
+}
+#arriba{
+    background: url('dado/uno.png') center/cover;
+    transform:  translateY(-100px) rotateX(90deg)  ;
+} 
+#fondo{
+    background: url('dado/cuatro.png') center/cover;
+    transform:  translateZ(-100px)  ;
+    
+}
+#izquierda{
+    background: url('dado/cinco.png') center/cover;
+    transform:  translateX(-100px) rotateY(90deg) ;
+}
+#abajo{
+    background: url('dado/seis.png') center/cover;
+    transform:  translateY(100px) rotateX(90deg) ;
+
+}
+
+/* #cuboDiv:hover{
+    transform: rotateY(+30deg) rotateX(+30deg);
+} */
